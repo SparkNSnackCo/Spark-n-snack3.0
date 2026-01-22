@@ -1,0 +1,763 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spark N Snack — curated boxes to spark joy and faith, created by Gracie & Sabreana. Inspiring creative growth and fun connections.">
+    <title>Spark N Snack | Inspire. Create. Connect.</title>
+    <link rel="icon" href="assets/favicon.jpeg" type="image/jpeg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Spark N Snack",
+      "url": "******",
+      "logo": "******/assets/logo.jpeg",
+      "description": "Spark N Snack — curated boxes to spark joy and faith, created by Gracie & Sabreana.",
+      "founder": [
+        { "@type": "Person", "name": "Gracie" },
+        { "@type": "Person", "name": "Sabreana" }
+      ]
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.jpeg" alt="Spark N Snack Logo">
+        <h1>Spark N Snack</h1>
+        <nav>
+            <a href="pricing.html" class="nav-link">View Pricing</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <!-- Company Description -->
+        <section class="description">
+            <h2>About Spark N Snack</h2>
+            <p>
+                At <strong>Spark N Snack</strong>, we believe in sparking joy and creativity in every moment! 
+                Founded by <strong>Gracie and Sabreana</strong>, our mission is to deliver thoughtfully curated subscription boxes 
+                that inspire, uplift, and bring fun into everyday life. Each box is designed to reflect our playful spirit, 
+                faith, and commitment to personal growth. Join us on a journey of discovery, delight, and meaningful connections!
+            </p>
+        </section>
+
+        <!-- Product Showcase -->
+        <section class="product-showcase">
+            <a href="spark-box.html" class="product">
+                <img src="assets/spark-box.svg" alt="The Spark Box - Creativity and DIY Projects" width="300" height="200">
+                <h3>The Spark Box</h3>
+                <p>Ignite your creativity with our signature collection of DIY projects, journaling prompts, and inspirational tools designed to help you shine.</p>
+            </a>
+            <a href="spirit-box.html" class="product">
+                <img src="assets/spirit-box.svg" alt="The Spirit Box - Faith and Comfort" width="300" height="200">
+                <h3>The Spirit Box</h3>
+                <p>Nurture your soul with our faith-based collection of devotionals, prayer journals, and uplifting messages to guide your spiritual growth.</p>
+            </a>
+            <a href="combo-delight.html" class="product">
+                <img src="assets/combo-box.svg" alt="The Combo Delight - Best of Both Worlds" width="300" height="200">
+                <h3>The Combo Delight</h3>
+                <p>The best of both worlds! Creative sparks and spiritual nourishment in one package. Includes exclusive <strong>behind-the-scenes videos</strong> of our founding story!</p>
+            </a>
+        </section>
+
+        <!-- Value Proposition -->
+        <section class="value-proposition">
+            <h2>Why Join the Spark N Snack Community?</h2>
+            <p>More than just a box, it's a monthly reminder to pause, create, and connect.</p>
+            <ul>
+                <li><strong>Curated with Purpose:</strong> Every item is hand-picked by Gracie & Sabreana to bring you joy.</li>
+                <li><strong>Faith & Fun Combined:</strong> We bridge the gap between spiritual growth and creative expression.</li>
+                <li><strong>Exclusive Community Access:</strong> Join a network of like-minded women supporting each other.</li>
+                <li><strong>Zero Risk:</strong> Skip a month or cancel anytime. Satisfaction guaranteed!</li>
+            </ul>
+        </section>
+
+        <!-- Subscription Form -->
+        <section class="subscription-form">
+            <h2>Start Your Journey</h2>
+            <form name="subscription" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="subscription" />
+                <p class="hidden">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                </p>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <input type="text" id="address" name="address" placeholder="123 Joy St, Happiness, CA" required>
+                </div>
+                <button type="submit">Subscribe Now</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Spark N Snack. Created with joy by Gracie and Sabreana.</p>
+    </footer>
+</body>
+</html>
+pricing.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Spark N Snack</title>
+    <link rel="icon" href="assets/favicon.jpeg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <img src="assets/logo.jpeg" alt="Spark N Snack Logo">
+            <h1>Spark N Snack</h1>
+        </a>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="description" style="text-align: center;">
+            <h2>Choose Your Joy</h2>
+            <p>Select the plan that best fits your creative and spiritual journey. All plans can be paused or cancelled anytime.</p>
+        </section>
+
+        <div class="pricing-grid">
+            <!-- Spark Box -->
+            <div class="pricing-card">
+                <h3>The Spark Box</h3>
+                <div class="price">$35<span>/month</span></div>
+                <p>Perfect for DIY enthusiasts and creative souls.</p>
+                <ul class="features">
+                    <li>Curated DIY Projects</li>
+                    <li>Journaling Prompts</li>
+                    <li>Inspirational Art Tools</li>
+                    <li>Access to Community</li>
+                </ul>
+                <a href="index.html" class="cta-button">Select Plan</a>
+            </div>
+
+            <!-- Spirit Box -->
+            <div class="pricing-card">
+                <h3>The Spirit Box</h3>
+                <div class="price">$35<span>/month</span></div>
+                <p>Nurture your faith and find inner peace.</p>
+                <ul class="features">
+                    <li>Monthly Devotionals</li>
+                    <li>Prayer Journals</li>
+                    <li>Uplifting Messages</li>
+                    <li>Access to Community</li>
+                </ul>
+                <a href="index.html" class="cta-button">Select Plan</a>
+            </div>
+
+            <!-- Combo Delight -->
+            <div class="pricing-card popular">
+                <h3>The Combo Delight</h3>
+                <div class="price">$60<span>/month</span></div>
+                <p>The ultimate experience of faith and creativity.</p>
+                <ul class="features">
+                    <li><strong>Everything</strong> in Spark Box</li>
+                    <li><strong>Everything</strong> in Spirit Box</li>
+                    <li>Exclusive Bonus Items</li>
+                    <li>Behind-the-Scenes Videos</li>
+                </ul>
+                <a href="index.html" class="cta-button">Select Plan</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+             <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Spark N Snack. Created with joy by Gracie and Sabreana.</p>
+    </footer>
+</body>
+</html>
+spark-box.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spark Box | Spark N Snack</title>
+    <link rel="icon" href="assets/favicon.jpeg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <img src="assets/logo.jpeg" alt="Spark N Snack Logo">
+            <h1>Spark N Snack</h1>
+        </a>
+        <nav>
+            <a href="pricing.html" class="nav-link">View Pricing</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="product-detail">
+            <h2>The Spark Box</h2>
+            <div class="product-content">
+                <p>Welcome to <strong>The Spark Box</strong> — your monthly dose of creativity and inspiration! Designed for those who love to create, dream, and explore, this box is packed with tools to ignite your inner spark.</p>
+                
+                <h3>What's Inside?</h3>
+                <ul>
+                    <li><strong>Exclusive DIY Projects:</strong> Hands-on crafts with all materials included to create something beautiful for your home or yourself.</li>
+                    <li><strong>Journaling Prompts:</strong> Thought-provoking questions and beautiful stationery to help you reflect and grow.</li>
+                    <li><strong>Creative Challenges:</strong> Fun monthly challenges to push your creative boundaries.</li>
+                </ul>
+
+                <p>Whether you're a seasoned artist or just looking for a fun new hobby, The Spark Box brings the studio to your doorstep.</p>
+
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+        </section>
+        
+        <!-- Subscription Form Link (reuse form or link to it) -->
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" style="background: var(--primary-color); color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; font-weight: bold;">Subscribe Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Spark N Snack. Created with joy by Gracie and Sabreana.</p>
+    </footer>
+</body>
+</html>
+spirit-box.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spirit Box | Spark N Snack</title>
+    <link rel="icon" href="assets/favicon.jpeg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <img src="assets/logo.jpeg" alt="Spark N Snack Logo">
+            <h1>Spark N Snack</h1>
+        </a>
+        <nav>
+            <a href="pricing.html" class="nav-link">View Pricing</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="product-detail">
+            <h2>The Spirit Box</h2>
+            <div class="product-content">
+                <p>Nurture your soul with <strong>The Spirit Box</strong>. In a busy world, finding moments for peace and spiritual connection is essential. We've curated this box to be your monthly retreat.</p>
+                
+                <h3>What's Inside?</h3>
+                <ul>
+                    <li><strong>Monthly Devotionals:</strong> Guided readings centered around a monthly theme to deepen your faith.</li>
+                    <li><strong>Prayer Journals:</strong> Beautifully designed journals to record your prayers, gratitude, and reflections.</li>
+                    <li><strong>Scripture Cards:</strong> Pocket-sized encouragement to carry with you or share with others.</li>
+                    <li><strong>Faith-Based Books:</strong> A carefully selected book to inspire your personal growth journey.</li>
+                    <li><strong>Comfort Items:</strong> A tasty snack to enjoy during your quiet time.</li>
+                </ul>
+
+                <p>Grow in faith and find your center with a box that speaks to your heart.</p>
+
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" style="background: var(--primary-color); color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; font-weight: bold;">Subscribe Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Spark N Snack. Created with joy by Gracie and Sabreana.</p>
+    </footer>
+</body>
+</html>
+combo-delight.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Combo Delight | Spark N Snack</title>
+    <link rel="icon" href="assets/favicon.jpeg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <img src="assets/logo.jpeg" alt="Spark N Snack Logo">
+            <h1>Spark N Snack</h1>
+        </a>
+        <nav>
+            <a href="pricing.html" class="nav-link">View Pricing</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="product-detail">
+            <h2>The Combo Delight</h2>
+            <div class="product-content">
+                <p>Why choose when you can have it all? <strong>The Combo Delight</strong> is our ultimate package, bringing you the best of creativity and spiritual nourishment in one joy-filled box. Plus, get exclusive access to our <strong><a href="#" style="color: var(--primary-color); text-decoration: underline;">behind-the-scenes videos</a></strong> where we share the story of why we started this company!</p>
+                
+                <h3>What's Inside?</h3>
+                <ul>
+                    <li><strong>Full Spark Box Contents:</strong> All the DIY projects, art, and creative tools from our Spark Box.</li>
+                    <li><strong>Full Spirit Box Contents:</strong> The complete set of devotionals, journals, and faith-based resources from our Spirit Box.</li>
+                    <li><strong>Exclusive Bonus Item:</strong> A special gift only available to our Combo subscribers!</li>
+                    <li><strong>Best Value:</strong> Save 20% compared to subscribing to both boxes individually.</li>
+                </ul>
+
+                <p>Experience the full spectrum of joy, creativity, and faith with The Combo Delight.</p>
+
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" style="background: var(--primary-color); color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; font-weight: bold;">Subscribe Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Spark N Snack. Created with joy by Gracie and Sabreana.</p>
+    </footer>
+</body>
+</html>
+assets/css/styles.css
+:root {
+    --primary-color: #ff7f50;
+    --secondary-color: #fff3e6;
+    --text-color: #333;
+    --bg-color: #f9f9f9;
+    --white: #ffffff;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 0;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: var(--bg-color);
+    transform: skewY(-2deg);
+}
+
+header img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    border: 6px solid rgba(255,255,255,0.3);
+    background: white;
+    padding: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.description {
+    background: var(--white);
+    padding: 3rem;
+    margin: 2rem 0;
+    border-top: 8px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.description h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.description p {
+    font-size: 1.1rem;
+}
+
+section {
+    margin-bottom: 6rem;
+}
+
+.value-proposition {
+    background-color: var(--secondary-color);
+    padding: 4rem;
+    border-radius: 16px;
+    text-align: center;
+    border-left: 8px solid var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+.value-proposition h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.value-proposition ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    max-width: 800px;
+}
+
+.value-proposition li {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.value-proposition li::before {
+    content: '★';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.product-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    padding: 1rem 0;
+}
+
+.product {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-bottom: 5px solid transparent;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    background-color: #eee;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.product h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    min-height: auto;
+    display: block;
+}
+
+.subscription-form {
+    background: var(--white);
+    padding: 4rem;
+    margin: 4rem 0;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    background-image: linear-gradient(135deg, #ffffff 0%, #fffbf0 100%);
+    border: 1px solid #ffe0b2;
+}
+
+.subscription-form h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.subscription-form input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+.subscription-form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(255, 127, 80, 0.1);
+}
+
+.subscription-form button {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(255, 127, 80, 0.3);
+    margin-top: 1rem;
+}
+
+.subscription-form button:hover {
+    background-color: #e66e40;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 127, 80, 0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0;
+    background: #333;
+    color: #eee;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    .description {
+        padding: 2rem;
+    }
+    .subscription-form {
+        padding: 2rem;
+    }
+}
+
+/* Page specific styles */
+.product-detail {
+    background: var(--white);
+    padding: 4rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 4rem;
+}
+
+.product-detail h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.product-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    border-bottom-color: var(--primary-color);
+}
+
+/* Pricing Page Styles */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pricing-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #777;
+    font-weight: 400;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    flex-grow: 1;
+}
+
+.features li {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.cta-button {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.cta-button:hover {
+    background-color: #e66e40;
+    box-shadow: 0 5px 15px rgba(255, 127, 80, 0.3);
+}
+
+.popular {
+    border-color: var(--primary-color);
+    position: relative;
+}
+
+.popular::after {
+    content: 'Most Popular';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-bottom: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    border-bottom-color: white;
+    opacity: 0.9;
+}
+netlify.toml
+[build]
+  publish = "."
